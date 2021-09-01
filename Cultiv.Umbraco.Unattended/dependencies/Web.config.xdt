@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+    <appSettings>
+        <add key="Umbraco.Core.RuntimeState.InstallUnattended" value="true"  xdt:Locator="Match(key)" xdt:Transform="InsertIfMissing" />
+    </appSettings>
+    <appSettings>
+        <add key="Umbraco.Core.ConfigurationStatus" value="[[UmbracoVersion]]" xdt:Locator="Match(key)" xdt:Transform="SetAttributes(value)" />
+        <add key="Umbraco.Core.RuntimeState.InstallUnattended" value="true"  xdt:Locator="Match(key)" xdt:Transform="SetAttributes(value)" />
+    </appSettings>
+
+    <connectionStrings>
+        <add name="umbracoDbDSN" connectionString="Data Source=|DataDirectory|\Umbraco.sdf;Flush Interval=1;" providerName="System.Data.SqlServerCe.4.0" xdt:Locator="Match(name)" xdt:Transform="SetAttributes(connectionString,providerName)" />
+    </connectionStrings>
+</configuration>
