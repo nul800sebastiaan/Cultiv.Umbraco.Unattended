@@ -2,10 +2,12 @@
 <configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
     <appSettings>
         <add key="Umbraco.Core.RuntimeState.InstallUnattended" value="true"  xdt:Locator="Match(key)" xdt:Transform="InsertIfMissing" />
+        <add key="Umbraco.Core.RuntimeState.InstallMissingDatabase" value="true"  xdt:Locator="Match(key)" xdt:Transform="InsertIfMissing" />
     </appSettings>
     <appSettings>
         <add key="Umbraco.Core.ConfigurationStatus" value="[[UmbracoVersion]]" xdt:Locator="Match(key)" xdt:Transform="SetAttributes(value)" />
         <add key="Umbraco.Core.RuntimeState.InstallUnattended" value="true"  xdt:Locator="Match(key)" xdt:Transform="SetAttributes(value)" />
+        <add key="Umbraco.Core.RuntimeState.InstallMissingDatabase" value="true"  xdt:Locator="Match(key)" xdt:Transform="SetAttributes(value)" />
     </appSettings>
 
     <connectionStrings>
